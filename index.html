@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    </LInk>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading">
+            <h1> TODO LIST</h1>
+            <input type="text" class="input-task" id="values">
+            <P class="noData">NO DATA FOUND</P>
+        </div>
+        <div class="all-task">
+
+        </div>
+
+        <div class="function">
+           <div class="btn-left">
+                <button class="btnAdd focus"> <i class="fa-solid fa-plus"></i> </button>
+                <button class="btnSearch"> <i class="fas fa-search"></i> </button>
+            </div>
+            <div class="choices">
+                <select name="Action" id="action">
+                    <option value="action">Action</option>
+                    <option value="deleteAllSelected">Delete All Selected</option>
+                    <option value="selectAll">Select All</option>
+                    <option value="unselectAll">Unselect All</option>
+                </select>
+                <select name="" id="sort">
+                    <option value="sort">Sort</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                </select>
+            </div>
+
+            <div class="btnGroup">
+                <button class="btnAll active">All</button>
+                <button class="btnActive">Active</button>
+                <button class="btnCompleted">Completed</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
